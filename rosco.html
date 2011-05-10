@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script src="jquery-1.5.1.js"></script>
+		<script src="script-rosco.js"></script>
+		<style>
+			#content {
+				height: 350px;
+				width:	350px;
+			}
+			#content > span {
+				background-image: url(./default.jpg);
+				height: 25px;
+				width: 25px;
+				color: white;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			span > span {
+				position: relative;
+				left: 5px;
+				top: 3px;
+			}
+			body {
+				background-color: #666;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content"></div>
+		Temps: <span id="reloj">0</span>
+		Encerts: <span id="encerts">0</span>
+		Errors: <span id="errors">0</span>
+		<br />
+		<input type="button" id="start" value="start" />
+		<input type="button" id="encertat" value="encertat" />
+		<input type="button" id="fallat" value="fallat" />
+		<input type="button" id="pasapalabra" value="pasapalabra" /><br />
+		<input type="button" id="acontinuo" value="acontinuo" />
+	</body>
+</html>
